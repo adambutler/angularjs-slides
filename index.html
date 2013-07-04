@@ -73,7 +73,7 @@
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:500,700' rel='stylesheet' type='text/css'>
 
     <!--
         
@@ -164,9 +164,12 @@
         It will not be rotated or scaled.
         
     -->
+
+    <!--
     <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
         <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
     </div>
+    -->
 
     <!--
         
@@ -183,6 +186,8 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
+
+    <!--
     <div class="step slide" data-x="0" data-y="-1500">
         <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
     </div>
@@ -190,6 +195,7 @@
     <div class="step slide" data-x="1000" data-y="-1500">
         <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
     </div>
+    -->
 
     <!--
         
@@ -202,9 +208,8 @@
         
     -->
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+        <h1>AngularJS</h1>
+        <span class="footnote">Adam Butler - lab.io</span>
     </div>
 
     <!--
@@ -215,15 +220,64 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It's a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+    <div id="about" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>AngularJS is what HTML would have been, had it been designed for building web-apps.</p>
+        <span class="footnote">http://angularjs.com</span>
     </div>
 
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+        <div class="bigtext">
+            <div>Angular was first released in</div>
+            <div>2009</div>
+            <div>and had its 1.0</div>
+            <div>stable release in June last year.</div>
+        </div>
     </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <div class="bigtext">
+            <div>Angular was first released in</div>
+            <div>2009</div>
+            <div>and had its 1.0</div>
+            <div>stable release in June last year.</div>
+        </div>
+    </div>
+
+    <div id="graph" class="step" data-x="-1600" data-y="3500" data-rotate="270" data-scale="8" style="width: 640px;">
+        <img src="http://w3techs.com/diagram/history_technology/js-angularjs"></img>
+    </div>
+
+    <div id="virgin" class="step" data-x="-2390" data-y="6400" data-rotate="180" data-scale="1.6">
+        <iframe src="http://www.virgin-atlantic.com/us/en.html" style="width: 960px; height: 675px;"></iframe>
+    </div>
+
+    <div id="ps4" class="step" data-x="-730" data-y="6400" data-rotate="180" data-scale="1.6">
+        <img src="http://cdn3.sbnation.com/entry_photo_images/5024829/PS3_YouTube_large_verge_medium_landscape.png" style="width: 960px; height: 675px;"></img>
+    </div>
+
+    <div id="code1" class="slide-code step slide" data-x="3500" data-y="-1900" data-rotate="270" data-scale="4.5">
+
+        <div class="demo">
+            <h1>Text here</h1>
+        </div>
+
+        <div class="code">
+            <code>
+                input type="text" id="myInput">
+                <h1 id="textArea"></h1>
+
+                $('#myInput').on('keyup', function(){
+                    $('#textArea').html( $(this).val() );
+                });
+            </code>
+        </div>
+    </div>
+
+    <!--
+    <div id="graph" class="step" data-x="-1600" data-y="2500" data-rotate="270" data-scale="8">
+        <img src="http://w3techs.com/diagram/history_technology/js-angularjs"></img>
+    </div>
+    -->
 
     <!--
         
@@ -234,9 +288,12 @@
         positioned far away from us (by 3000px).
         
     -->
+
+    <!--
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
         <p>and <b>tiny</b> ideas</p>
     </div>
+    -->
 
     <!--
         
@@ -258,9 +315,12 @@
         Only one current step has the `present` class.
         
     -->
+
+    <!--
     <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
         <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
     </div>
+    -->
 
     <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
         <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
@@ -361,7 +421,14 @@ if ("ontouchstart" in document.documentElement) {
     
 -->
 <script src="js/impress.js"></script>
-<script>impress().init();</script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bigtext.js"></script>
+<script>
+    impress().init();
+    $('.bigtext').bigtext({
+        maxfontsize: 600
+    });
+</script>
 
 <!--
     
