@@ -270,6 +270,11 @@ a:focus {
     white-space: nowrap;
 }
 
+.slide-code iframe {
+    width: 100%;
+    height: 100%;
+}
+
 /*
     And now we start to style each step separately.
 
